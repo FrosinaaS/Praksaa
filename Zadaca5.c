@@ -23,8 +23,8 @@ int main(){
           printf("Не недостасува број.\n");
      else printf("%d\n", rez);
 
-    //ova raboti samo ako nizata zapocnuva od 1
-    //ako ne zapocnuva bi bile potrebni max i min ili da se sortira pa proveruva(no slozenosta na toa resenie bi bila O(N²))
+    //ova raboti samo ako nizata zapocnuva od 1!
+    //ako ne zapocnuva bi bile potrebni max i min ili da se sortira pa proveruva(no slozenosta na toa resenie bi bila O(N²)).
 
     return 0;
 }
