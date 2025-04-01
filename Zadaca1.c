@@ -2,7 +2,6 @@
 #include <stdlib.h>
 #include<math.h>
 
-
 double function(double value, int decimals){
     int mesta= 1;
 
