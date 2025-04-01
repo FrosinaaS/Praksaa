@@ -50,7 +50,7 @@ int main(){
     if(validate_embg(embg)==0)
         printf("EMBG е валиден.\n");
     else
-        printf("EMBG не е валиден!\n");
+        printf("EMBG не е валиден.\n");
 
     return 0;
 }
