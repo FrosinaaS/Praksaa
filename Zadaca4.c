@@ -18,7 +18,7 @@ int* rank_properties(int prices[], int N){
                 rezultat[j+1]= temp;
             }
         }
-    }//buble sort
+    }//bubble sort.
     return rezultat;
 }
 
