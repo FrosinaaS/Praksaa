@@ -18,7 +18,6 @@ char *compose_embg(char *date_of_birth, char *region_code, char *sex, char *sequ
     static char embg[13];
 
     snprintf(embg, 13, "%s%s%s%s", date_of_birth, region_code, sex, sequence);
-
     int checksum= f_checksum(embg);
     embg[12]= checksum+'0';
     embg[13]= '\0';
