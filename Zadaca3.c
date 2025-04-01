@@ -23,7 +23,7 @@ int check_for_triangle_by_coords(int A[], int B[], int C[]){
     if(kolinearni(A, B) || kolinearni(A, C) || kolinearni(B, C))
        return 0;
 
-    return (tocka(A, B)+tocka(A, C)+tocka(B, C) == 3); //dali imaat 3 zaednicki tocki
+    return (tocka(A, B)+tocka(A, C)+tocka(B, C) == 3); //dali imaat 3 zaednicki tocki.
 }
 
 int main(){
