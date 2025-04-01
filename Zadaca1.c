@@ -3,37 +3,41 @@
 #include<math.h>
 
 
-double function(double value, int decimals) {
-        if (decimals<=0) {
-        return 0;
-        //ako e vneseno negativen broj ili 0 vrakja 0;
-    }
+double function(double value, int decimals){
+    int mesta= 1;
 
-    int mesta = 1;
-    for (int i=0; i<decimals; i++) {
+    if(decimals<=0)
+        return 0;
+
+    for(int i=0; i<decimals; i++){
         mesta= mesta*10;
     }
 
     value=value*mesta;
-    // ja pomestuvame za decimals mesta
 
-    if (value-floor(value)<0.5) {
+    if(value-floor(value)<0.5)
         value=floor(value);
-    } else {
+     else
         value=ceil(value);
-    }
 
     return value/mesta;
 }
 
-int main() {
+int main(){
+
+    printf("%lf\n",function(1.786,2));
+    printf("%lf\n",function(3.14,3));
+    printf("%lf\n",function(783.9823749,4));
+    printf("%lf\n",function(92.1823,0));
+
+   /*
    double value;
    int decimals;
-   printf("Vnesete broj i broj na decimalni mesta: ");
+
+   printf("Vnesete broj i broj na decimalni mesta:\n");
    scanf("%lf %d", &value,&decimals);
-   printf("%l f",function(value,decimals));
-   //ja povikuvame funkcijata i go pecatime reziltatut.
+   printf("%lf",function(value,decimals));
+   */
 
     return 0;
-
 }
