@@ -10,7 +10,6 @@ int find_missing_element(int A[], int N){
     }
     if(ocekuvana_suma-suma == N+1)
     return 0;
-
     return ocekuvana_suma-suma ;
 }
 
