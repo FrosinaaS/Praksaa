@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include<math.h>
+#include <math.h>
 
 double function(double value, int decimals){
     int mesta= 1;
@@ -37,6 +37,5 @@ int main(){
    scanf("%lf %d", &value,&decimals);
    printf("%lf",function(value,decimals));
    */
-
     return 0;
 }
